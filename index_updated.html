@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanzania Logistics ERP - Feature Selection Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="company-info">
+                    <div class="company-logo">
+                        <span class="flag">🇹🇿</span>
+                        <div>
+                            <h1>Tanzania Logistics ERP</h1>
+                            <p>Feature Selection Dashboard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="operation-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">1200+</span>
+                        <span class="stat-label">Trucks</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Modules</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <button class="nav-btn active" data-page="dashboard">Dashboard</button>
+            <button class="nav-btn" data-page="fleet">Fleet Management</button>
+            <button class="nav-btn" data-page="warehouse">Warehouse</button>
+            <button class="nav-btn" data-page="customs">Port & Customs</button>
+            <button class="nav-btn" data-page="importexport">Import/Export</button>
+            <button class="nav-btn" data-page="crossborder">Cross-border</button>
+            <button class="nav-btn" data-page="financial">Financial</button>
+            <button class="nav-btn" data-page="crm">CRM</button>
+            <button class="nav-btn" data-page="hr">HR</button>
+            <button class="nav-btn" data-page="misc">Miscellaneous</button>
+            <button class="nav-btn" data-page="summary">Summary</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Dashboard Page -->
+        <div id="dashboard" class="page active">
+            <div class="container">
+                <div class="dashboard-header">
+                    <h2>ERP Module Selection Dashboard</h2>
+                    <p>Select and configure the ERP modules that best fit your logistics operations across Tanzania and neighboring countries.</p>
+                </div>
+
+                <div class="overview-stats">
+                    <div class="overview-card">
+                        <h3>Current Operations</h3>
+                        <ul>
+                            <li>🚛 1200+ Trucks Fleet</li>
+                            <li>🏭 Multiple Warehouses</li>
+                            <li>🌍 Import/Export Operations</li>
+                            <li>🌐 Cross-border Trade (Congo, Uganda, Rwanda, Kenya, Burundi)</li>
+                            <li>🛃 Port Clearance Operations</li>
+                        </ul>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Selection Progress</h3>
+                        <div class="progress-item">
+                            <span>Modules Configured:</span>
+                            <span class="progress-value" id="configured-modules">0/8</span>
+                        </div>
+                        <div class="progress-item">
+                            <span>Features Selected:</span>
+                            <span class="progress-value" id="selected-features">0</span>
+                        </div>
+                        <div class="progress-item">
+                            <span>Estimated Cost:</span>
+                            <span class="progress-value" id="estimated-cost">$0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modules-grid" id="modules-grid">
+                    <!-- Modules will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Module Pages (will be populated by JavaScript) -->
+        <div id="module-pages">
+            <!-- Individual module pages will be inserted here -->
+        </div>
+
+        <!-- Summary Page -->
+        <div id="summary" class="page">
+            <div class="container">
+                <div class="summary-header">
+                    <h2>ERP Implementation Summary & Recommendations</h2>
+                    <p>Review your selected features and get implementation recommendations.</p>
+                </div>
+
+                <div class="summary-content">
+                    <div class="summary-section">
+                        <h3>Selected Modules & Features</h3>
+                        <div id="selected-summary">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="summary-section">
+                        <h3>Implementation Recommendations</h3>
+                        <div class="recommendation-cards">
+                            <div class="recommendation-card">
+                                <h4>Phase 1 - Core Operations (Months 1-3)</h4>
+                                <p>Start with Fleet Management and Warehouse Management for immediate operational benefits.</p>
+                                <ul>
+                                    <li>GPS Tracking Implementation</li>
+                                    <li>Basic Inventory Management</li>
+                                    <li>Driver Management System</li>
+                                </ul>
+                            </div>
+                            <div class="recommendation-card">
+                                <h4>Phase 2 - Trade Operations (Months 4-6)</h4>
+                                <p>Implement customs and import/export modules for trade efficiency.</p>
+                                <ul>
+                                    <li>TANCIS Integration</li>
+                                    <li>Documentation Automation</li>
+                                    <li>Port Clearance Management</li>
+                                </ul>
+                            </div>
+                            <div class="recommendation-card">
+                                <h4>Phase 3 - Advanced Features (Months 7-12)</h4>
+                                <p>Deploy cross-border operations and advanced analytics.</p>
+                                <ul>
+                                    <li>RECTS Integration</li>
+                                    <li>Multi-country Compliance</li>
+                                    <li>Advanced Reporting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="summary-section">
+                        <h3>Technology & Deployment Options</h3>
+                        <div class="deployment-options">
+                            <div class="deployment-card">
+                                <h4>Recommended: Hybrid Cloud</h4>
+                                <p>Best balance of security, control, and scalability</p>
+                                <div class="pros-cons">
+                                    <div class="pros">
+                                        <strong>Benefits:</strong>
+                                        <ul>
+                                            <li>Sensitive data on-premise</li>
+                                            <li>Scalable cloud features</li>
+                                            <li>Redundancy and backup</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="summary-actions">
+                        <button class="btn btn--primary" onclick="exportSummary()">Export Summary Report</button>
+                        <button class="btn btn--secondary" onclick="saveDraft()">Save Draft</button>
+                        <button class="btn btn--outline" onclick="resetSelections()">Reset All</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Selection Panel (Fixed) -->
+    <div class="selection-panel" id="selection-panel">
+        <div class="panel-header">
+            <h3>Current Selections</h3>
+            <button class="panel-toggle" onclick="togglePanel()">−</button>
+        </div>
+        <div class="panel-content">
+            <div class="selection-summary" id="selection-summary">
+                <p>No features selected yet</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="feature-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Feature Details</h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Feature details will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
